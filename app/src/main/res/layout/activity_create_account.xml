@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:textSize="50dp"
+    android:id="@+id/SignInText"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SignInText"
+        android:layout_marginTop="20dp"
+        android:hint="enter your email"
+        android:id="@+id/signup_emailEditText"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_emailEditText"
+        android:layout_marginTop="20dp"
+        android:hint="enter your password"
+        android:id="@+id/signup_passwordedittext"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_passwordedittext"
+        android:layout_marginTop="20dp"
+        android:hint="enter your confirm password"
+        android:id="@+id/signup_passwordedittextconfirm"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:inputType="textPassword"
+        android:id="@+id/signUpButton"
+        android:layout_below="@id/signup_passwordedittextconfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
